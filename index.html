@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA</title>
+</head>
+<body>
+    <!-- <select>
+        <option><a href="https://Facebook.com">Facebook</a></option>
+        <option><a>Instegram</a></option>
+        <option>Linkedin</option>
+        <option>Twitter</option>
+    </select> -->
+    
+    <select onchange="redirectToURL(this)">
+        <option value="https://facebook.com">Facebook</option>
+        <option value="https://example.org">Instegram</option>
+        <option>Linkedin</option>
+        <option>Twitter</option>
+      </select>
+      
+      <script>
+      function redirectToURL(selectElement) {
+        var selectedValue = selectElement.value;
+        if (selectedValue !== "") {
+          window.location.href = selectedValue;
+        }
+      }
+      </script>
+      
+    
+</body>
+</html>
